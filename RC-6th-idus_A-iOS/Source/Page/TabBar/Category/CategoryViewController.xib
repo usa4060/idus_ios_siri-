@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="RC_6th_idus_A_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBarView" destination="9u1-PK-XMj" id="cuy-RX-7x0"/>
+                <outlet property="cartBtn" destination="SHh-3N-65p" id="OvK-nR-ghZ"/>
+                <outlet property="containerView" destination="jCW-0e-fAc" id="jde-qC-8CL"/>
+                <outlet property="view" destination="n5e-49-GTQ" id="jsl-sw-KHV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="n5e-49-GTQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HJ-MY-PFX" userLabel="앱바">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gth-JB-y64">
+                            <rect key="frame" x="13.999999999999996" y="60" width="62.666666666666657" height="22"/>
+                            <attributedString key="attributedText">
+                                <fragment content="카테고리">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name="AppleSDGothicNeo-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-3N-65p">
+                            <rect key="frame" x="327" y="60" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="RD6-O5-FYN"/>
+                                <constraint firstAttribute="height" constant="24" id="cFh-N9-6HV"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <backgroundConfiguration key="background">
+                                    <imageReference key="image" image="cart" catalog="system" symbolScale="medium"/>
+                                    <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </backgroundConfiguration>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SHh-3N-65p" secondAttribute="trailing" constant="24" id="CvL-vx-cmM"/>
+                        <constraint firstItem="gth-JB-y64" firstAttribute="leading" secondItem="4HJ-MY-PFX" secondAttribute="leading" constant="14" id="Ji4-Dp-1xs"/>
+                        <constraint firstItem="SHh-3N-65p" firstAttribute="top" secondItem="4HJ-MY-PFX" secondAttribute="top" constant="60" id="QtO-Xi-6FA"/>
+                        <constraint firstItem="gth-JB-y64" firstAttribute="top" secondItem="4HJ-MY-PFX" secondAttribute="top" constant="60" id="YLm-sc-7nS"/>
+                        <constraint firstAttribute="height" constant="100" id="tR5-ua-YJg"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-PK-XMj" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                    <rect key="frame" x="0.0" y="100" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="DZy-dG-uMr"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="efq-aL-uiz">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCW-0e-fAc" userLabel="XL페이징">
+                    <rect key="frame" x="0.0" y="152" width="375" height="660"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="jt2-Ea-Pzt"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="3Ap-zF-FqK"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cRo-UW-mc7"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cRo-UW-mc7" firstAttribute="bottom" secondItem="jCW-0e-fAc" secondAttribute="bottom" id="9wo-Vm-IhY"/>
+                <constraint firstItem="9u1-PK-XMj" firstAttribute="top" secondItem="4HJ-MY-PFX" secondAttribute="bottom" id="Cbw-cs-Oiq"/>
+                <constraint firstItem="4HJ-MY-PFX" firstAttribute="top" secondItem="n5e-49-GTQ" secondAttribute="top" id="EXe-VU-c1o"/>
+                <constraint firstItem="jCW-0e-fAc" firstAttribute="leading" secondItem="cRo-UW-mc7" secondAttribute="leading" id="FAu-v1-X8W"/>
+                <constraint firstItem="cRo-UW-mc7" firstAttribute="trailing" secondItem="jCW-0e-fAc" secondAttribute="trailing" id="Ggl-gS-Q0M"/>
+                <constraint firstItem="9u1-PK-XMj" firstAttribute="leading" secondItem="cRo-UW-mc7" secondAttribute="leading" id="Jzr-3O-FWy"/>
+                <constraint firstItem="cRo-UW-mc7" firstAttribute="trailing" secondItem="9u1-PK-XMj" secondAttribute="trailing" id="S0d-Uf-CHZ"/>
+                <constraint firstItem="4HJ-MY-PFX" firstAttribute="leading" secondItem="cRo-UW-mc7" secondAttribute="leading" id="XjV-mm-WoJ"/>
+                <constraint firstItem="cRo-UW-mc7" firstAttribute="trailing" secondItem="4HJ-MY-PFX" secondAttribute="trailing" id="hdv-hE-NzY"/>
+                <constraint firstItem="jCW-0e-fAc" firstAttribute="top" secondItem="9u1-PK-XMj" secondAttribute="bottom" id="pWi-NW-yx7"/>
+            </constraints>
+            <point key="canvasLocation" x="136.80000000000001" y="138.17733990147784"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

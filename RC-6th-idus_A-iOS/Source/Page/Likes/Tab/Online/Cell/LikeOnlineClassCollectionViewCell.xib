@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LikeOnlineClassCollectionViewCell" customModule="RC_6th_idus_A_iOS"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LikeOnlineClassCell" id="gTV-IL-0wX" customClass="LikeOnlineClassCollectionViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vpn-zo-ezn" userLabel="classImg">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="199.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="rE7-yi-90i"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-po-7iQ" userLabel="categoryName">
+                        <rect key="frame" x="12" y="212" width="77" height="14.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="모션/애니메이션">
+                                <attributes>
+                                    <color key="NSColor" red="0.69975172871291036" green="0.69975172871291036" blue="0.69975172871291036" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsJ-RE-GxI">
+                        <rect key="frame" x="93" y="212" width="1" height="12"/>
+                        <color key="backgroundColor" red="0.69975172870000002" green="0.69975172870000002" blue="0.69975172870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="TsF-RF-LbB"/>
+                            <constraint firstAttribute="width" constant="1" id="uBr-ZN-KpP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-I4-e2E" userLabel="level">
+                        <rect key="frame" x="98" y="212" width="21" height="15"/>
+                        <attributedString key="attributedText">
+                            <fragment content="쉬움">
+                                <attributes>
+                                    <color key="NSColor" red="0.69803929330000003" green="0.69803929330000003" blue="0.69803923369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjE-yJ-kG5" userLabel="title">
+                        <rect key="frame" x="12" y="234.5" width="356" height="17"/>
+                        <attributedString key="attributedText">
+                            <fragment content="자면서 용돈 벌기! 플랫폼별 이모티콘 만들기 클래스">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="AppleSDGothicNeo-SemiBold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9v-vU-LJH" userLabel="writerName">
+                        <rect key="frame" x="12" y="259.5" width="21" height="14.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="훼니">
+                                <attributes>
+                                    <color key="NSColor" red="0.22912289397885099" green="0.22912289397885099" blue="0.22912289397885099" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="12" name="AppleSDGothicNeo-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Vpn-zo-ezn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="05x-5G-qtr"/>
+                <constraint firstItem="xsJ-RE-GxI" firstAttribute="top" secondItem="Vpn-zo-ezn" secondAttribute="bottom" constant="12" id="2XF-O3-rLS"/>
+                <constraint firstAttribute="trailing" secondItem="tjE-yJ-kG5" secondAttribute="trailing" constant="12" id="5MU-YF-0JQ"/>
+                <constraint firstItem="Vpn-zo-ezn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Aug-Eo-9Z3"/>
+                <constraint firstItem="6nk-po-7iQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Dk0-LG-mfd"/>
+                <constraint firstItem="q9v-vU-LJH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="GoU-PC-vhA"/>
+                <constraint firstItem="6nk-po-7iQ" firstAttribute="top" secondItem="Vpn-zo-ezn" secondAttribute="bottom" constant="12" id="QLd-mP-WXB"/>
+                <constraint firstItem="q9v-vU-LJH" firstAttribute="top" secondItem="tjE-yJ-kG5" secondAttribute="bottom" constant="8" id="Sc6-bD-Bon"/>
+                <constraint firstItem="fxK-I4-e2E" firstAttribute="top" secondItem="Vpn-zo-ezn" secondAttribute="bottom" constant="12" id="Tze-1y-gvy"/>
+                <constraint firstItem="tjE-yJ-kG5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="VkM-VV-NOy"/>
+                <constraint firstItem="fxK-I4-e2E" firstAttribute="leading" secondItem="xsJ-RE-GxI" secondAttribute="trailing" constant="4" id="YZF-g1-ihy"/>
+                <constraint firstItem="tjE-yJ-kG5" firstAttribute="top" secondItem="6nk-po-7iQ" secondAttribute="bottom" constant="8" id="lSu-Vh-grF"/>
+                <constraint firstAttribute="trailing" secondItem="Vpn-zo-ezn" secondAttribute="trailing" id="sU5-Ic-UqI"/>
+                <constraint firstItem="xsJ-RE-GxI" firstAttribute="leading" secondItem="6nk-po-7iQ" secondAttribute="trailing" constant="4" id="wdb-K0-9Fr"/>
+            </constraints>
+            <size key="customSize" width="380" height="300"/>
+            <connections>
+                <outlet property="categoryName" destination="6nk-po-7iQ" id="5nj-rh-pnf"/>
+                <outlet property="classImg" destination="Vpn-zo-ezn" id="fKV-mH-Lne"/>
+                <outlet property="level" destination="fxK-I4-e2E" id="GQX-du-fJU"/>
+                <outlet property="title" destination="tjE-yJ-kG5" id="qKA-HW-0Ma"/>
+                <outlet property="writerName" destination="q9v-vU-LJH" id="I9B-t7-Yrk"/>
+            </connections>
+            <point key="canvasLocation" x="330.43478260869568" y="174.10714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gift" catalog="system" width="128" height="124"/>
+    </resources>
+</document>

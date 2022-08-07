@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClassViewController" customModule="RC_6th_idus_A_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBarView" destination="eju-sG-h9b" id="hBl-ev-SSS"/>
+                <outlet property="containerView" destination="diS-aB-Dnu" id="QWS-eL-AqT"/>
+                <outlet property="idusLogoImageView" destination="rMj-7W-q7r" id="zTD-MF-7Qz"/>
+                <outlet property="scrollView" destination="diS-aB-Dnu" id="s3t-fH-gMb"/>
+                <outlet property="searchField" destination="UWk-eZ-Pxr" id="04N-q9-mga"/>
+                <outlet property="searchIcon" destination="rdP-no-mlC" id="LfB-GV-nml"/>
+                <outlet property="shoppingcartBtn" destination="3gd-dr-6Wr" id="0oc-gl-BZa"/>
+                <outlet property="view" destination="ksE-YT-z4N" id="inc-nn-E45"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ksE-YT-z4N">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxV-ak-SAd" userLabel="앱바">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="rMj-7W-q7r">
+                            <rect key="frame" x="171" y="48" width="72" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="Bob-tj-L37"/>
+                                <constraint firstAttribute="height" constant="32" id="ZWh-4w-zvd"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gd-dr-6Wr">
+                            <rect key="frame" x="378" y="56" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="Wdg-pL-1xj"/>
+                                <constraint firstAttribute="height" constant="24" id="k9r-99-prG"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <buttonConfiguration key="configuration" style="plain">
+                                <backgroundConfiguration key="background">
+                                    <imageReference key="image" image="cart" catalog="system" symbolScale="medium"/>
+                                    <color key="strokeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </backgroundConfiguration>
+                            </buttonConfiguration>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWk-eZ-Pxr">
+                            <rect key="frame" x="12" y="88" width="390" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="ess-mK-dY6"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="   온라인 클래스 검색">
+                                        <attributes>
+                                            <color key="NSColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="rdP-no-mlC">
+                            <rect key="frame" x="370" y="95" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="8hJ-ax-IhM"/>
+                                <constraint firstAttribute="height" constant="20" id="zAS-4b-SYJ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UWk-eZ-Pxr" secondAttribute="trailing" constant="12" id="5gf-fb-k0D"/>
+                        <constraint firstAttribute="trailing" secondItem="rdP-no-mlC" secondAttribute="trailing" constant="24" id="8D5-xM-bWS"/>
+                        <constraint firstItem="3gd-dr-6Wr" firstAttribute="top" secondItem="qxV-ak-SAd" secondAttribute="top" constant="56" id="DvY-IL-bhS"/>
+                        <constraint firstItem="UWk-eZ-Pxr" firstAttribute="leading" secondItem="qxV-ak-SAd" secondAttribute="leading" constant="12" id="MI6-8F-Hp6"/>
+                        <constraint firstAttribute="height" constant="130" id="P4d-lZ-8zD"/>
+                        <constraint firstItem="rMj-7W-q7r" firstAttribute="centerX" secondItem="qxV-ak-SAd" secondAttribute="centerX" id="Us4-dV-tnv"/>
+                        <constraint firstItem="rdP-no-mlC" firstAttribute="centerY" secondItem="UWk-eZ-Pxr" secondAttribute="centerY" id="jmC-F7-62A"/>
+                        <constraint firstItem="rMj-7W-q7r" firstAttribute="top" secondItem="qxV-ak-SAd" secondAttribute="top" constant="48" id="joY-TO-dG3"/>
+                        <constraint firstItem="UWk-eZ-Pxr" firstAttribute="top" secondItem="rMj-7W-q7r" secondAttribute="bottom" constant="8" id="kFj-H5-78r"/>
+                        <constraint firstAttribute="trailing" secondItem="3gd-dr-6Wr" secondAttribute="trailing" constant="12" id="kwv-Js-D6d"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eju-sG-h9b" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                    <rect key="frame" x="0.0" y="130" width="414" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bET-jG-Rsz"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L65-jF-dAT">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diS-aB-Dnu" userLabel="XL페이징">
+                    <rect key="frame" x="0.0" y="178" width="414" height="718"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="nbJ-64-85L"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Iyl-Gb-Sbc"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cWo-d2-Z3q"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cWo-d2-Z3q" firstAttribute="bottom" secondItem="diS-aB-Dnu" secondAttribute="bottom" id="3gH-Oh-eX1"/>
+                <constraint firstItem="eju-sG-h9b" firstAttribute="trailing" secondItem="cWo-d2-Z3q" secondAttribute="trailing" id="6Ln-vT-rrr"/>
+                <constraint firstItem="eju-sG-h9b" firstAttribute="top" secondItem="qxV-ak-SAd" secondAttribute="bottom" id="7Tg-lK-2ko"/>
+                <constraint firstItem="eju-sG-h9b" firstAttribute="leading" secondItem="cWo-d2-Z3q" secondAttribute="leading" id="Fln-0s-IuC"/>
+                <constraint firstItem="qxV-ak-SAd" firstAttribute="leading" secondItem="cWo-d2-Z3q" secondAttribute="leading" id="X0R-lL-7yW"/>
+                <constraint firstItem="diS-aB-Dnu" firstAttribute="leading" secondItem="cWo-d2-Z3q" secondAttribute="leading" id="ZxL-oI-7ue"/>
+                <constraint firstItem="qxV-ak-SAd" firstAttribute="top" secondItem="ksE-YT-z4N" secondAttribute="top" id="b2S-8e-WQE"/>
+                <constraint firstItem="diS-aB-Dnu" firstAttribute="top" secondItem="eju-sG-h9b" secondAttribute="bottom" id="dHX-6W-PdK"/>
+                <constraint firstItem="cWo-d2-Z3q" firstAttribute="trailing" secondItem="diS-aB-Dnu" secondAttribute="trailing" id="f1L-Wi-eke"/>
+                <constraint firstItem="cWo-d2-Z3q" firstAttribute="trailing" secondItem="qxV-ak-SAd" secondAttribute="trailing" id="tq0-TP-VZ0"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Search" width="13" height="13"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="idus-logo" width="196" height="79"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

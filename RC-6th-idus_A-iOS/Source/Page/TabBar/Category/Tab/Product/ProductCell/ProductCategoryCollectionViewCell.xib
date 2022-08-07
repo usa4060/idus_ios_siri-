@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCategoryCell" id="gTV-IL-0wX" customClass="ProductCategoryCollectionViewCell" customModule="RC_6th_idus_A_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WP-qu-Vfa">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="99"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onclass1" translatesAutoresizingMaskIntoConstraints="NO" id="bUe-Yj-S1v">
+                                <rect key="frame" x="12" y="12" width="101" height="83"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bUe-Yj-S1v" secondAttribute="trailing" constant="12" id="6Mb-sC-e7m"/>
+                            <constraint firstAttribute="bottom" secondItem="bUe-Yj-S1v" secondAttribute="bottom" constant="4" id="Vfz-ni-WDX"/>
+                            <constraint firstItem="bUe-Yj-S1v" firstAttribute="top" secondItem="9WP-qu-Vfa" secondAttribute="top" constant="12" id="YfY-H6-ciE"/>
+                            <constraint firstItem="bUe-Yj-S1v" firstAttribute="leading" secondItem="9WP-qu-Vfa" secondAttribute="leading" constant="12" id="kor-U3-lRj"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3S-L4-1eE">
+                        <rect key="frame" x="0.0" y="99" width="125" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="aOm-uO-rqW"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="디저트, 베이커리, 떡">
+                                <attributes>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9WP-qu-Vfa" secondAttribute="trailing" id="5w1-E0-cR2"/>
+                <constraint firstItem="j3S-L4-1eE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ShD-Em-AzP"/>
+                <constraint firstAttribute="bottom" secondItem="j3S-L4-1eE" secondAttribute="bottom" id="Sil-kE-0dA"/>
+                <constraint firstAttribute="trailing" secondItem="j3S-L4-1eE" secondAttribute="trailing" id="chO-Kf-qtC"/>
+                <constraint firstItem="9WP-qu-Vfa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sdF-ZZ-ob6"/>
+                <constraint firstItem="9WP-qu-Vfa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xNY-47-GqS"/>
+                <constraint firstItem="j3S-L4-1eE" firstAttribute="top" secondItem="9WP-qu-Vfa" secondAttribute="bottom" id="y4T-P4-X8k"/>
+            </constraints>
+            <size key="customSize" width="125" height="127"/>
+            <connections>
+                <outlet property="imageView" destination="bUe-Yj-S1v" id="ER1-Fl-tPd"/>
+                <outlet property="productName" destination="j3S-L4-1eE" id="gJ0-4g-GOj"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="116.18303571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onclass1" width="1080" height="1080"/>
+    </resources>
+</document>

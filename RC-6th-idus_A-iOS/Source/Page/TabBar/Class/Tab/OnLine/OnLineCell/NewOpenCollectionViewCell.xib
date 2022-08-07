@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewOpenCollexcxtionViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewOpenCell" id="8tH-PY-Sml" customClass="NewOpenCollectionViewCell" customModule="RC_6th_idus_A_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="513" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="513" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SPB-wL-V8J" userLabel="profileImg">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="149.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="aZ0-7j-0Yu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5H-7P-tPE" userLabel="categoryName">
+                        <rect key="frame" x="132" y="0.0" width="47" height="12"/>
+                        <attributedString key="attributedText">
+                            <fragment content="뜨개/코바늘">
+                                <attributes>
+                                    <color key="NSColor" red="0.50014241536458326" green="0.50014241536458326" blue="0.50014241536458326" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="10" name="AppleSDGothicNeo-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSn-ej-d6O">
+                        <rect key="frame" x="179" y="0.0" width="7" height="18"/>
+                        <attributedString key="attributedText">
+                            <fragment content="*">
+                                <attributes>
+                                    <color key="NSColor" red="0.50014241536458326" green="0.50014241536458326" blue="0.50014241536458326" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" metaFont="system" size="15"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIp-Yq-Lvx" userLabel="writerName">
+                        <rect key="frame" x="186" y="0.0" width="35" height="12"/>
+                        <attributedString key="attributedText">
+                            <fragment content="또르니트">
+                                <attributes>
+                                    <color key="NSColor" red="0.50014241536458326" green="0.50014241536458326" blue="0.50014241536458326" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <font key="NSFont" size="10" name="AppleSDGothicNeo-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMV-S4-aJX" userLabel="title">
+                        <rect key="frame" x="132" y="16" width="381" height="40"/>
+                        <attributedString key="attributedText">
+                            <fragment content="뜨개초보도 이 클래스 한 번이면, 여름 니트부터 겨울 니트까지!">
+                                <attributes>
+                                    <font key="NSFont" size="11" name="AppleSDGothicNeo-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-6P-FlE">
+                        <rect key="frame" x="84" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="DXw-IO-oov"/>
+                            <constraint firstAttribute="height" constant="24" id="n3e-hQ-FcD"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                        <state key="selected" image="heart.fill" catalog="system"/>
+                        <connections>
+                            <action selector="likeBtnTapped:" destination="8tH-PY-Sml" eventType="touchUpInside" id="Asi-Uo-gFb"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="rPB-tc-HNh"/>
+            <constraints>
+                <constraint firstItem="e5H-7P-tPE" firstAttribute="leading" secondItem="SPB-wL-V8J" secondAttribute="trailing" constant="12" id="2BV-iy-KV3"/>
+                <constraint firstItem="wSn-ej-d6O" firstAttribute="leading" secondItem="e5H-7P-tPE" secondAttribute="trailing" id="3bL-Tr-qMd"/>
+                <constraint firstItem="SPB-wL-V8J" firstAttribute="top" secondItem="8tH-PY-Sml" secondAttribute="top" id="LAk-sr-OVq"/>
+                <constraint firstItem="wSn-ej-d6O" firstAttribute="top" secondItem="8tH-PY-Sml" secondAttribute="top" id="NNf-mX-ac7"/>
+                <constraint firstItem="QIp-Yq-Lvx" firstAttribute="top" secondItem="8tH-PY-Sml" secondAttribute="top" id="QZq-TP-QeX"/>
+                <constraint firstItem="SPB-wL-V8J" firstAttribute="leading" secondItem="8tH-PY-Sml" secondAttribute="leading" id="YcZ-QU-xsP"/>
+                <constraint firstItem="cuw-6P-FlE" firstAttribute="top" secondItem="SPB-wL-V8J" secondAttribute="top" constant="12" id="ceC-9y-EVV"/>
+                <constraint firstAttribute="trailing" secondItem="NMV-S4-aJX" secondAttribute="trailing" id="hzw-Jb-nvY"/>
+                <constraint firstItem="NMV-S4-aJX" firstAttribute="top" secondItem="e5H-7P-tPE" secondAttribute="bottom" constant="4" id="mw1-Ag-r3J"/>
+                <constraint firstItem="QIp-Yq-Lvx" firstAttribute="leading" secondItem="wSn-ej-d6O" secondAttribute="trailing" id="pE6-43-6GV"/>
+                <constraint firstItem="SPB-wL-V8J" firstAttribute="trailing" secondItem="cuw-6P-FlE" secondAttribute="trailing" constant="12" id="t36-Rd-DVu"/>
+                <constraint firstAttribute="bottom" secondItem="SPB-wL-V8J" secondAttribute="bottom" id="tYL-Wl-pnK"/>
+                <constraint firstItem="e5H-7P-tPE" firstAttribute="top" secondItem="8tH-PY-Sml" secondAttribute="top" id="uB9-vd-Ej0"/>
+                <constraint firstItem="NMV-S4-aJX" firstAttribute="leading" secondItem="SPB-wL-V8J" secondAttribute="trailing" constant="12" id="yhS-MI-xUh"/>
+            </constraints>
+            <size key="customSize" width="513" height="150"/>
+            <connections>
+                <outlet property="categoryName" destination="e5H-7P-tPE" id="AGc-Jw-onP"/>
+                <outlet property="likeBtn" destination="cuw-6P-FlE" id="QWo-XC-ffx"/>
+                <outlet property="profileImg" destination="SPB-wL-V8J" id="40m-12-kQ4"/>
+                <outlet property="title" destination="NMV-S4-aJX" id="l0D-9r-FOr"/>
+                <outlet property="writerName" destination="QIp-Yq-Lvx" id="2hF-K0-8Ig"/>
+            </connections>
+            <point key="canvasLocation" x="467.39130434782612" y="122.54464285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gift" catalog="system" width="128" height="124"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
